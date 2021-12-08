@@ -1,0 +1,62 @@
+/* grid layout */
+.item1 {grid-area: img;}
+.item2 {grid-area: header; position: relative;
+  }
+.item3 {grid-area: nav;}
+.item4 {grid-area: main;}
+.item5 {grid-area: footer;}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'img img header header'
+    'nav main main main'
+    'footer footer footer footer';
+  background-color: #02BFF3;
+  grid-gap: 0;
+}
+
+/* semantic tag styling */
+
+h1 {
+  font-size: 60px/*5vw*/;
+  color: white;
+  text-align: left;
+}
+
+body {
+  color: white;
+}
+
+h6 {
+  text-align: center;
+}
+
+nav.item3 ul {
+  list-style-type: none;
+  padding: 10px;
+}
+
+ul {
+  padding: 20px;
+}
+
+nav a {
+  font-size: 2em;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: magenta;
+}
+
+footer.item5 a {
+  color: white;
+  text-decoration: none;
+}
+
+/* slider formatting */
+.slider {
+  width: 50%;
+}

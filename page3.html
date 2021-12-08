@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Simple Tip Calculator</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <div class="grid-container">
+      <img src="images/S&E_Logo.jpeg" alt="Restaurant Logo" width="250px"" height="auto">
+      <h1 class="item2">Sam & Ella's Restaurant</h1>
+      <nav class="item3">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="page2.html">Create an Account</a></li>
+          <li><a href="page3.html">Simple Tip Calculator</a></li>
+          <li><a href="https://www.lego.com/en-us">Lego Store</a></li>
+        </ul>
+      </nav>
+      <main class="item4">
+        <h2>Simple Tip Calculator</h2>
+        <p>Not sure how much to tip our amazing staff? Use this simple tip calculator to calculate different tip prices!</p>
+        <form>
+          <label for="totalprice">Total Price:</label><br>
+          <input type="number" id="totalprice" name="Total Price" required></input><br><br>
+          <label for="totalprice">Tip Percentage:</label><br>
+          <div class="slidecontainer">
+            <input type="range" min="10" max="50" value="10" class="slider" id="sliderrange" onload="function()"><p id="displayslidervalue"></p><br>
+          </div>
+        </form>
+        <button onclick="tipCalc()">Calculate!</button>
+        <button onclick="clearAll()">Clear Values</button>
+        <h1 id="tipTotal"></h1>
+      </main>
+      <footer class="item5">
+        <h6>&#169Evan Owenby<br><a href="mailto:owenby_evan@columbusstate.edu">Contact Me</a></h6>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
