@@ -60,3 +60,21 @@ footer.item5 a {
 .slider {
   width: 50%;
 }
+
+/* button formatting */
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+}
+
+.button:hover {
+  background-color: white; /* Green */
+  color: black;
+}
